@@ -1,0 +1,23 @@
+{
+	"name": "react-library-example",
+	"version": "1.0.1",
+	"description": "Very basic react component library using tsup",
+	"author": "Manuel Rivera <menu.rivera@gmail.com>",
+	"main": "dist/index.js",
+	"files": [
+		"dist/**/*.js",
+		"dist/**/*.d.ts",
+		"dist/**/*.mjs"
+	],
+	"dependencies": {
+		"react": "^18.3.1",
+		"tsup": "^8.2.4"
+	},
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"typescript": "^5.5.4"
+	}
+}
